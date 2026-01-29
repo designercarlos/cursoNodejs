@@ -36,6 +36,13 @@
 		- Blob
 
 7. Inserir dados
+```
+INSRET INTO usuarios(nome, email, idade) VALUES(
+    "Dudu",
+    "meuemail@meudominio.com",
+    28
+);
+```
 
 8. Listar todos os dados da tabela:
 ```
@@ -47,4 +54,14 @@ SELECT * FROM nomeDaTabela
 SELECT * FROM usuarios WHERE idade = 8;
 
 SELECT * FROM usuarios WHERE idade >= 18;
+```
+
+10. Excluir registros (linhas) de uma tabela:
+```
+DELETE FROM usuarios WHERE nome = "Dudu";
+```
+
+11. Editar dados de um registro:
+```
+UPDATE usuarios SET nome = "yati" WHERE nome = "nini";
 ```
